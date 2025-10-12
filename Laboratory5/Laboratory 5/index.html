@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DOM Manipulation & Fetch API — CRUD Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>CRUD Lab — DOM + Fetch API</h1>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Item Registration</h2>
+      <form id="item-form">
+        <!-- hidden id for updates -->
+        <input type="hidden" id="item-id" />
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="e.g., Fluffy" />
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="3" placeholder="Brief description"></textarea>
+
+        <div class="form-actions">
+          <button id="save-btn" type="submit" class="btn btn-primary">Save</button>
+          <button id="cancel-btn" type="button" class="btn btn-ghost">Cancel</button>
+        </div>
+      </form>
+
+      <div id="message" class="message" aria-live="polite"></div>
+    </section>
+
+    <section class="list-section">
+      <div class="list-header">
+        <h2>Items</h2>
+        <div class="search-wrap">
+          <input id="search" placeholder="Search items..." />
+          <button id="refresh" title="Refresh list">⟳</button>
+        </div>
+      </div>
+
+      <table id="items-table" class="items-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th class="actions-col">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="items-body">
+          <!-- rows injected by JS -->
+        </tbody>
+      </table>
+
+      <div id="empty-state" class="empty">No items yet. Add one using the form.</div>
+    </section>
+
+    <!-- ✅ Added Todo Section Here -->
+    <section class="todo-section">
+      <h2>Todo List (Frontend)</h2>
+      <input type="text" id="todoInput" placeholder="Enter task">
+      <button onclick="addTodo()">Add</button>
+
+      <ul id="todoList"></ul>
+    </section>
+    <!-- ✅ End Todo Section -->
+  </main>
+
+
+  <!-- Make sure the script is loaded last -->
+  <script src="scripts.js"></script>
+</body>
+</html>
