@@ -1,0 +1,16 @@
+Êþº¾   = G
+       java/lang/Object <init> ()V	  	  
+ 
+  com/valen/lab_7/Customer id Ljava/lang/Long;	     name Ljava/lang/String;	     email	     phone	     invoices Ljava/util/List; RuntimeVisibleAnnotations Ljakarta/persistence/Id; $Ljakarta/persistence/GeneratedValue; strategy $Ljakarta/persistence/GenerationType; IDENTITY 	Signature 0Ljava/util/List<Lcom/valen/lab_7/Invoice;>; Ljakarta/persistence/OneToMany; mappedBy customer  cascade !Ljakarta/persistence/CascadeType; ALL Code LineNumberTable LocalVariableTable this Lcom/valen/lab_7/Customer; I(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V MethodParameters getId ()Ljava/lang/Long; setId (Ljava/lang/Long;)V  getName ()Ljava/lang/String;  setName (Ljava/lang/String;)V getEmail setEmail getPhone setPhone 
+getInvoices ()Ljava/util/List; 2()Ljava/util/List<Lcom/valen/lab_7/Invoice;>; 
+setInvoices (Ljava/util/List;)V LocalVariableTypeTable 3(Ljava/util/List<Lcom/valen/lab_7/Invoice;>;)V 
+SourceFile 
+Customer.java Ljakarta/persistence/Entity; Ljakarta/persistence/Table; !       
+             e                       !    "      #  $s % &[ e ' (      )   /     *· ±    *        +        , -     .  )   t     *· *+µ  *,µ 
+*-µ *µ ±    *            +   4     , -      
+                     /    
+             0 1  )   /     *´  °    *        +        , -    2 3  )   :     *+µ  ±    *        +        , -      
+   /    
+    4 5  )   /     *´ 
+°    *        +        , -    6 7  )   :     *+µ 
+±    *        +        , -         /        8 5  )   /     *´ °    *         +        , -    9 7  )   :     *+µ ±    *       ! +        , -         /        : 5  )   /     *´ °    *       # +        , -    ; 7  )   :     *+µ ±    *       $ +        , -         /        < =  )   /     *´ °    *       & +        , -   !    >  ? @  )   L     *+µ ±    *       ' +        , -         A         "  /       !    B  C    D      E   F  s %

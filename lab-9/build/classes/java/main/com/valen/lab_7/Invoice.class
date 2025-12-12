@@ -1,0 +1,26 @@
+Êþº¾   = T
+       java/lang/Object <init> ()V	  	  
+ 
+  com/valen/lab_7/Invoice id Ljava/lang/Long;	     	createdAt Ljava/time/LocalDateTime;	     customer Lcom/valen/lab_7/Customer;	     products Ljava/util/Set;
+       java/time/LocalDateTime now ()Ljava/time/LocalDateTime; RuntimeVisibleAnnotations Ljakarta/persistence/Id; $Ljakarta/persistence/GeneratedValue; strategy $Ljakarta/persistence/GenerationType; IDENTITY Ljakarta/persistence/ManyToOne;  Ljakarta/persistence/JoinColumn; name 
+customer_id nullable     	Signature /Ljava/util/Set<Lcom/valen/lab_7/Product;>;  Ljakarta/persistence/ManyToMany; Ljakarta/persistence/JoinTable; invoice_product 
+joinColumns 
+invoice_id inverseJoinColumns 
+product_id Code LineNumberTable LocalVariableTable this Lcom/valen/lab_7/Invoice; getId ()Ljava/lang/Long; setId (Ljava/lang/Long;)V MethodParameters getCreatedAt setCreatedAt (Ljava/time/LocalDateTime;)V 
+getCustomer !()Lcom/valen/lab_7/Customer; 
+setCustomer "(Lcom/valen/lab_7/Customer;)V 
+getProducts ()Ljava/util/Set; 1()Ljava/util/Set<Lcom/valen/lab_7/Product;>; 
+setProducts (Ljava/util/Set;)V LocalVariableTypeTable 2(Ljava/util/Set<Lcom/valen/lab_7/Product;>;)V 
+prePersist 
+StackMapTable  Ljakarta/persistence/PrePersist; 
+SourceFile Invoice.java Ljakarta/persistence/Entity; Ljakarta/persistence/Table;  invoice !       
+            !  "e # $               %   &  's ( )Z *     +    ,    -  -   .  's / 0[ @ &  's 1 2[ @ &  's 3 
+     4   /     *· ±    5        6        7 8    9 :  4   /     *´  °    5        6        7 8    ; <  4   :     *+µ  ±    5        6        7 8      
+   =    
+    >   4   /     *´ 
+°    5       ! 6        7 8    ? @  4   :     *+µ 
+±    5       " 6        7 8         =        A B  4   /     *´ °    5       $ 6        7 8    C D  4   :     *+µ ±    5       % 6        7 8         =        E F  4   /     *´ °    5       ' 6        7 8   +    G  H I  4   L     *+µ ±    5       ( 6        7 8         J         ,  =       +    K  L   4   F     *´ 
+Ç 
+*¸ µ 
+±    5   
+    ,  - 6        7 8   M          N    O    P      Q   R  's S

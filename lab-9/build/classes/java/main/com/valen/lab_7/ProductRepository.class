@@ -1,0 +1,3 @@
+Êþº¾   = 
+   &com/valen/lab_7/ProductRepository   java/lang/Object   5org/springframework/data/jpa/repository/JpaRepository 	Signature yLjava/lang/Object;Lorg/springframework/data/jpa/repository/JpaRepository<Lcom/valen/lab_7/Product;Ljava/lang/Long;>; 
+SourceFile ProductRepository.java                	    

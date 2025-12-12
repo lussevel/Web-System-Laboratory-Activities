@@ -1,0 +1,48 @@
+ ˛∫æ   = Ö	       com/valen/lab_7/Product id Ljava/lang/Long;	   	 
+ name Ljava/lang/String;	   
+  price Ljava/lang/Double;	     invoices Ljava/util/Set;
+     canEqual (Ljava/lang/Object;)Z
+     getId ()Ljava/lang/Long;
+       java/lang/Object equals
+  ! " # getPrice ()Ljava/lang/Double;
+  % & '  getName ()Ljava/lang/String;
+  ) * + 
+getInvoices ()Ljava/util/Set;
+  - . / hashCode ()I
+ 1 2  3 4 5 java/lang/String  valueOf &(Ljava/lang/Object;)Ljava/lang/String;   7 8 9 makeConcatWithConstants Z(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;)Ljava/lang/String;
+  ; < = <init> ()V RuntimeVisibleAnnotations Ljakarta/persistence/Id; $Ljakarta/persistence/GeneratedValue; strategy $Ljakarta/persistence/GenerationType; IDENTITY 	Signature /Ljava/util/Set<Lcom/valen/lab_7/Invoice;>; -Lcom/fasterxml/jackson/annotation/JsonIgnore;  Ljakarta/persistence/ManyToMany; mappedBy products Code LineNumberTable LocalVariableTable this Lcom/valen/lab_7/Product; 1()Ljava/util/Set<Lcom/valen/lab_7/Invoice;>; setId (Ljava/lang/Long;)V MethodParameters  setName (Ljava/lang/String;)V setPrice (Ljava/lang/Double;)V 
+setInvoices (Ljava/util/Set;)V LocalVariableTypeTable 2(Ljava/util/Set<Lcom/basarte/lab_7/Invoice;>;)V o Ljava/lang/Object; other  this$id other$id 
+this$price 
+other$price 	this$name 
+other$name 
+this$invoices other$invoices 
+StackMapTable PRIME I result $id $price $name 	$invoices toString F(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/Double;Ljava/util/Set;)V f(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/Double;Ljava/util/Set<Lcom/valen/lab_7/Invoice;>;)V 
+SourceFile Product.java Ljakarta/persistence/Entity; Ljakarta/persistence/Table;  product BootstrapMethods x
+ y z  { 8 | $java/lang/invoke/StringConcatFactory ò(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; ~ *Product(id=, name=, price=, invoices=) InnerClasses  Å %java/lang/invoke/MethodHandles$Lookup  É java/lang/invoke/MethodHandles Lookup !          >     ?   @  Ae B C  	 
+    
+        D    E >     F   G  Hs I      J   /     *¥ ∞    K        L        M N    & '  J   /     *¥  ∞    K        L        M N    " #  J   /     *¥ 
+∞    K        L        M N    * +  J   /     *¥ ∞    K        L        M N   D    O  P Q  J   :     *+µ ±    K        L        M N         R       S T  J   :     *+µ  ±    K        L        M N      	 
+  R    	   U V  J   :     *+µ 
+±    K        L        M N      
+   R    
+   W X  J   L     *+µ ±    K        L        M N         Y         E  R      D    Z >     F       J  |  
+   ≤+*¶ ¨+¡ ö ¨+¿ M,*∂ ö ¨*∂ N,∂ :-« 
+∆ ß -∂ ö ¨*∂  :,∂  :« 
+∆ ß 
+∂ ö ¨*∂ $: ,∂ $: « 
+∆ ß 
+ ∂ ö ¨*∂ (:	,∂ (:
+	« 
+
+∆ ß 
+	
+∂ ö ¨¨    K        L   p 
+   ≤ M N     ≤ [ \   ù ] N  $ é ^ \  * à _ \  G k ` \  M e a \  l F b \   r @ c \  ë ! d \ 	 ó  e \ 
+ f   6  ¸   ˝     ˝     	˝     	˝     	 R    [      J   9     +¡ ¨    K        L        M N      ] \  R    ]   . /  J  Ü      p;<=*∂ N;h-« +ß  -∂ ,`=*∂  :;h« +ß ∂ ,`=*∂ $:;h« +ß ∂ ,`=*∂ (:;h« +ß ∂ ,`=¨    K        L   H     p M N    m g h   k i h  
+ f j \  # M k \  > 2 l \  Y  m \  f   ™ ˇ       ˇ       ˇ         ˇ         ˇ           ˇ           ˇ              ˇ                n '  J   C     *∂ *∂ $*∂  *∂ (∏ 0∫ 6  ∞    K        L        M N    < o  J   ~     *∑ :*+µ *,µ  *-µ 
+*µ ±    K       
+ L   4     M N            	 
+     
+         Y         E  R      	  
+    D    p  < =  J   /     *∑ :±    K        L        M N    q    r >     s   t  	s u v     w  }    
+  Ä Ç Ñ 
